@@ -1,15 +1,29 @@
 <div class="countdown-container">
-  <h1 appFitText>Time to {{ eventName }}</h1>
-  <div class="countdown" appFitText>
-    {{ countdown }}
+  <h1 appFitText>
+    {{ !eventName ? 'Give me a name' : 'Time to ' + eventName }}
+  </h1>
+  <div class="countdown" appFitText aria-live="assertive" aria-atomic="true">
+    {{ countdown ? countdown : 'Pick a date' }}
   </div>
   <div class="form">
-    <input [(ngModel)]="eventName" (blur)="updateEvent()" placeholder="Event Name" />
-    <input
-      [(ngModel)]="endDate"
-      (blur)="updateEvent()"
-      placeholder="End Date (e.g., 2024-12-31T23:59:59)"
-      type="datetime-local"
-    />
+    <div>
+      <label for="eventNameInput">Event Name</label>
+      <input
+        id="eventNameInput"
+        [(ngModel)]="eventName"
+        (blur)="updateEvent()"
+        placeholder="Event Name"
+      />
+    </div>
+    <div>
+      <label for="endDateInput">Event Date</label>
+      <input
+        id="endDateInput"
+        [(ngModel)]="endDate"
+        (blur)="updateEvent()"
+        placeholder="End Date (e.g., 2024-12-31T23:59:59)"
+        type="datetime-local"
+      />
+    </div>
   </div>
 </div>

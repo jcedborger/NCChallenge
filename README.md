@@ -1,12 +1,14 @@
 # My contribution to the Frontend Challenge by Natural Cycles
 
 This app lets you chose a date and time and assign a title to show a countdown timer to the
-specified date and time. Look at my demo of the app here:
+specified date and time.\
+Have a look at my demo of the app here: [https://ncchallenge.netlify.app](https://ncchallenge.netlify.app)
 
 ## Running the app
 
-Run `npm i` in project root Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`.
-The application will automatically reload if you change any of the source files.
+Run `npm i` in project root\
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically
+reload if you change any of the source files.
 
 ## Optional goals
 

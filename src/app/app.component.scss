@@ -11,3 +11,14 @@ main {
     font-size: 6rem;
   }
 }
+.container {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+
+  .footer {
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+    text-align: center;
+  }
+}
