@@ -1,0 +1,15 @@
+<div class="countdown-container">
+  <h1 appFitText>Time to {{ eventName }}</h1>
+  <div class="countdown" appFitText>
+    {{ countdown }}
+  </div>
+  <div class="form">
+    <input [(ngModel)]="eventName" (blur)="updateEvent()" placeholder="Event Name" />
+    <input
+      [(ngModel)]="endDate"
+      (blur)="updateEvent()"
+      placeholder="End Date (e.g., 2024-12-31T23:59:59)"
+      type="datetime-local"
+    />
+  </div>
+</div>
